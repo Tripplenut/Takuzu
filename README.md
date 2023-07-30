@@ -1,0 +1,2 @@
+# Takuzu
+Binary Puzzle Game!
