@@ -1,0 +1,3 @@
+# We be ignoring and things of that nature
+.vscode/*
+# !.vscode/settings.json # add back if needed
