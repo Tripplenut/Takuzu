@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const title = 'Takuzu';
+  const num = 0;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{title}</h1>
+      <p>a work in progress innit</p>
+      <p>button pressed {num} times</p>
+      <p>Button goes here when we figure it out</p>
+      <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Me! </a>
     </div>
   );
 }
