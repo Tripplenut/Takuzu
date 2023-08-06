@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Takuzu/static/css/main.156f2c18.css",
-    "main.js": "/Takuzu/static/js/main.a0c752db.js",
+    "main.js": "/Takuzu/static/js/main.4f7143b3.js",
     "index.html": "/Takuzu/index.html",
     "main.156f2c18.css.map": "/Takuzu/static/css/main.156f2c18.css.map",
-    "main.a0c752db.js.map": "/Takuzu/static/js/main.a0c752db.js.map"
+    "main.4f7143b3.js.map": "/Takuzu/static/js/main.4f7143b3.js.map"
   },
   "entrypoints": [
     "static/css/main.156f2c18.css",
-    "static/js/main.a0c752db.js"
+    "static/js/main.4f7143b3.js"
   ]
 }
