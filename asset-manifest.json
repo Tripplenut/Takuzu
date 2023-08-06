@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Tripplenut.github.io/Takuzu/static/css/main.156f2c18.css",
-    "main.js": "/Tripplenut.github.io/Takuzu/static/js/main.a0c752db.js",
-    "index.html": "/Tripplenut.github.io/Takuzu/index.html",
-    "main.156f2c18.css.map": "/Tripplenut.github.io/Takuzu/static/css/main.156f2c18.css.map",
-    "main.a0c752db.js.map": "/Tripplenut.github.io/Takuzu/static/js/main.a0c752db.js.map"
+    "main.css": "/Takuzu/static/css/main.156f2c18.css",
+    "main.js": "/Takuzu/static/js/main.a0c752db.js",
+    "index.html": "/Takuzu/index.html",
+    "main.156f2c18.css.map": "/Takuzu/static/css/main.156f2c18.css.map",
+    "main.a0c752db.js.map": "/Takuzu/static/js/main.a0c752db.js.map"
   },
   "entrypoints": [
     "static/css/main.156f2c18.css",
