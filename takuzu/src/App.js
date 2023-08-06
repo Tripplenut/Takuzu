@@ -1,4 +1,5 @@
 import './App.css';
+import Button from 'react-bootstrap/Button'
 
 function App() {
   const title = 'Takuzu';
@@ -8,9 +9,7 @@ function App() {
     <div className="App">
       <h1>{title}</h1>
       <p>a work in progress innit</p>
-      <p>button pressed {num} times</p>
-      <p>Button goes here when we figure it out</p>
-      <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Me! </a>
+      <Button variant='primary' href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click Me! </Button>
     </div>
   );
 }
