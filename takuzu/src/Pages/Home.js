@@ -10,11 +10,7 @@ function Home(){
   return(
     <Container className='justify-content-md-center'>
       <Row >
-        <Col></Col>
-        <Col xxl={8}>
         <NavigationBar/>
-        </Col>
-        <Col></Col>
       </Row>
       <Row>
         {/*Grid Board*/}
