@@ -1,5 +1,7 @@
+// React imports
+// import {Route} from 'react-router-dom'
+
 // Bootstrap imports
-import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavBar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -8,7 +10,7 @@ function NavigationBar(){
   return(
     <NavBar bg='primary'>
       <div className='ms-4'>
-      <NavBar.Brand href='#Home' > Takuzu </NavBar.Brand>
+      <NavBar.Brand> Takuzu </NavBar.Brand>
       </div>
       <Nav>
         <NavDropdown title='Puzzles'>

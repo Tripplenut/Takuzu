@@ -2,25 +2,21 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-// Component imports
-import NavigationBar from '../Components/Navbar'
 
-function Home(){
+function About(){
   return(
+    
     <Container className='justify-content-md-center'>
-      <Row >
-        <NavigationBar/>
-      </Row>
       <Row>
-        {/*Grid Board*/}
-        This is a Row
+        {/*Main Content*/}
+        Some about page stuff
       </Row>
       <Row>
         {/*Footer*/}
-        This is another Row
+        This will be a footer (eventually)
       </Row>
     </Container>
   );
 }
 
-export default Home;
+export default About;

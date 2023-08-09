@@ -5,15 +5,14 @@ import Row from 'react-bootstrap/Row';
 // Component imports
 import NavigationBar from '../Components/Navbar'
 
-function Home(){
+function Tutorial(){
   return(
     <Container className='justify-content-md-center'>
       <Row >
         <NavigationBar/>
       </Row>
       <Row>
-        {/*Grid Board*/}
-        This is a Row
+        Tutorial goes here
       </Row>
       <Row>
         {/*Footer*/}
@@ -23,4 +22,4 @@ function Home(){
   );
 }
 
-export default Home;
+export default Tutorial;

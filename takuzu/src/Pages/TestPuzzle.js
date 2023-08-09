@@ -2,25 +2,24 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-// Component imports
-import NavigationBar from '../Components/Navbar'
 
-function Home(){
-  return(
+function TestPuzzle(){
+    return(
     <Container className='justify-content-md-center'>
-      <Row >
-        <NavigationBar/>
-      </Row>
       <Row>
         {/*Grid Board*/}
-        This is a Row
+        Grid Board goes here
+      </Row>
+      <Row>
+        {/*mmm code*/}
+        Puzzle Selector or something
       </Row>
       <Row>
         {/*Footer*/}
-        This is another Row
+        This will be a footer
       </Row>
     </Container>
-  );
+    );
 }
 
-export default Home;
+export default TestPuzzle;
