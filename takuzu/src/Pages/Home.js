@@ -2,22 +2,16 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-// Component imports
-import NavigationBar from '../Components/Navbar'
-
 function Home(){
   return(
     <Container className='justify-content-md-center'>
-      <Row >
-        <NavigationBar/>
+      <Row>
+        <h1>
+          Welcome to the homepage
+        </h1>
       </Row>
       <Row>
-        {/*Grid Board*/}
-        This is a Row
-      </Row>
-      <Row>
-        {/*Footer*/}
-        This is another Row
+        Footer goes here
       </Row>
     </Container>
   );

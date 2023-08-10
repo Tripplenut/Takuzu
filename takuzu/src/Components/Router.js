@@ -1,5 +1,5 @@
 // React Imports
-import {Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 // Page Imports
 import Home from '../Pages/Home'
@@ -7,7 +7,7 @@ import About from '../Pages/About'
 import TestPuzzle from '../Pages/TestPuzzle'
 import Tutorial from '../Pages/Tutorial'
 
-function Routes(){
+function Router(){
   return (
     <Routes>
       <Route path='/' Component={Home}/>
@@ -18,4 +18,4 @@ function Routes(){
   );
 }
 
-export default Routes;
+export default Router;
