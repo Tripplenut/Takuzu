@@ -3,10 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 
-function TestPuzzle(){
+function Puzzle6x6(){
     return(
     <Container className='justify-content-md-center'>
       <Row>
+        <h1>
+          6x6 Puzzles
+        </h1>
         {/*Grid Board*/}
         Grid Board goes here
       </Row>
@@ -22,4 +25,4 @@ function TestPuzzle(){
     );
 }
 
-export default TestPuzzle;
+export default Puzzle6x6;

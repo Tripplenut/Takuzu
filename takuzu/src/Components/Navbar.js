@@ -18,15 +18,22 @@ function NavigationBar(){
       </div>
       <Nav>
         <NavDropdown title='Puzzles'>
-          <NavLink to='/TestPuzzle'>
-            <NavDropdown.Item>6x6</NavDropdown.Item>
+          <NavLink to='/6x6puzzle' className='dropdown-item'>
+            6x6 Puzzles
           </NavLink>
-          <NavDropdown.Item href='#8x8'>8x8</NavDropdown.Item>
-          <NavDropdown.Item href='#10x10'>10x10</NavDropdown.Item>
-          <NavDropdown.Item href='#12x12'>12x12</NavDropdown.Item>
+          <NavLink to='/8x8puzzle' className='dropdown-item'>
+            8x8 Puzzles
+          </NavLink>
+          <NavLink to='/10x10puzzle' className='dropdown-item'>
+            10x10 Puzzles
+          </NavLink>
+          <NavLink to='/12x12puzzle' className='dropdown-item'>
+            12x12 Puzzles
+          </NavLink>
         </NavDropdown>
         <NavLink to='/tutorial' className='nav-link'> Tutorial </NavLink>
         <NavLink to='/about' className='nav-link'> About </NavLink>
+        <NavLink to='/settings' className='nav-link'> Settings </NavLink>
       </Nav>
     </NavBar>
   );
