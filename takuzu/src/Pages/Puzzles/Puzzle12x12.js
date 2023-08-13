@@ -2,21 +2,27 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-function About(){
-  return(
+
+function Puzzle12x12(){
+    return(
     <Container className='justify-content-md-center'>
       <Row>
-        {/*Main Content*/}
         <h1>
-          About page and things of that nature
+          12x12 Puzzles
         </h1>
+        {/*Grid Board*/}
+        Grid Board goes here
+      </Row>
+      <Row>
+        {/*mmm code*/}
+        Puzzle Selector or something
       </Row>
       <Row>
         {/*Footer*/}
-        This will be a footer (eventually)
+        This will be a footer
       </Row>
     </Container>
-  );
+    );
 }
 
-export default About;
+export default Puzzle12x12;

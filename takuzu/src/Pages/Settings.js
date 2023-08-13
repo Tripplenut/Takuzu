@@ -2,13 +2,13 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-function About(){
+function Settings(){
   return(
     <Container className='justify-content-md-center'>
       <Row>
         {/*Main Content*/}
         <h1>
-          About page and things of that nature
+          Le Settings page
         </h1>
       </Row>
       <Row>
@@ -19,4 +19,4 @@ function About(){
   );
 }
 
-export default About;
+export default Settings;

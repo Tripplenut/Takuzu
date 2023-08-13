@@ -1,16 +1,18 @@
 // Bootstrap imports
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Grid from '../Components/Grid';
 
 
-function TestPuzzle(){
+function Puzzle8x8(){
     return(
     <Container className='justify-content-md-center'>
-      <Row> 
-        Puzzle Goes here
+      <Row>
+        <h1>
+          8x8 Puzzles
+        </h1>
+        {/*Grid Board*/}
+        Grid Board goes here
       </Row>
-      <Grid></Grid>
       <Row>
         {/*mmm code*/}
         Puzzle Selector or something
@@ -23,4 +25,4 @@ function TestPuzzle(){
     );
 }
 
-export default TestPuzzle;
+export default Puzzle8x8;
