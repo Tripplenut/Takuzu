@@ -26,6 +26,7 @@ function NavigationBar(){
           <NavDropdown.Item href='#12x12'>12x12</NavDropdown.Item>
         </NavDropdown>
         <NavLink to='/tutorial' className='nav-link'> Tutorial </NavLink>
+        <NavLink to='/testpuzzle' className='nav-link'> Test Puzzle </NavLink>
         <NavLink to='/about' className='nav-link'> About </NavLink>
       </Nav>
     </NavBar>
