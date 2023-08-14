@@ -2,6 +2,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+// Component imports
+import Board from '../../Components/Board';
 
 function Puzzle8x8(){
     return(
@@ -12,6 +14,9 @@ function Puzzle8x8(){
         </h1>
         {/*Grid Board*/}
         Grid Board goes here
+      </Row>
+      <Row>
+        <Board/>
       </Row>
       <Row>
         {/*mmm code*/}

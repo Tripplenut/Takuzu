@@ -32,7 +32,6 @@ function NavigationBar(){
           </NavLink>
         </NavDropdown>
         <NavLink to='/tutorial' className='nav-link'> Tutorial </NavLink>
-        <NavLink to='/testpuzzle' className='nav-link'> Test Puzzle </NavLink>
         <NavLink to='/about' className='nav-link'> About </NavLink>
         <NavLink to='/settings' className='nav-link'> Settings </NavLink>
       </Nav>

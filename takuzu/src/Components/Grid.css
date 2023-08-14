@@ -1,0 +1,18 @@
+.base{
+  color: aqua;
+  height: 420px;
+  width: 420px;
+  background-color: azure;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.tile{
+  color: aquamarine;
+  height: 50px;
+  width: 50px;
+  margin: 2%;
+  border-radius: 30%;
+  background-color: #119ad5;
+  border: 0px;
+}
