@@ -16,3 +16,11 @@
   background-color: #119ad5;
   border: 0px;
 }
+
+.tile:hover {
+  background-color: #0091ff;
+}
+      
+.tile:active {
+  background-color: #0077ff;
+}
