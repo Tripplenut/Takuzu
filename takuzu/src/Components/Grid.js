@@ -1,51 +1,18 @@
 // React imports
+import { useState } from 'react';
 import './Grid.css';
+import SBS1 from './Presets.js';
 
-function Grid() {
-
-    const handleClick = () => {
-        console.log("yo mista white")
+function Grid({n}) {
+    var tiles = [];
+    for(var i=0; i<n; i++){
+        tiles.push([]);
+        for(var j=0; j<n; j++){
+            tiles[i].push(<button className="tile">{SBS1[i][j]}</button>)
+        }
     }
-
     return(
-        <div className="base">
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-                <button className="tile" onClick={()=>{handleClick()}}>1</button>
-                <button className="tile" onClick={()=>{handleClick()}}>2</button>
-                <button className="tile" onClick={()=>{handleClick()}}>3</button>
-                <button className="tile" onClick={()=>{handleClick()}}>4</button>
-                <button className="tile" onClick={()=>{handleClick()}}>5</button>
-                <button className="tile" onClick={()=>{handleClick()}}>6</button>
-        </div>
+        <div className="base">{tiles}</div>
     );
 }
 
