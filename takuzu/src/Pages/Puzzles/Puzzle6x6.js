@@ -10,7 +10,7 @@ function Puzzle6x6(){
         <h1>
           6x6 Puzzles
         </h1>  
-        <Grid></Grid>
+        <Grid n={6}/>
         Grid Board goes here
       </Row>
       <Row>
