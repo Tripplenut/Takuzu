@@ -2,12 +2,14 @@
 import { useState } from 'react';
 import './Tile.css';
 
-
-function Tile({value_}){
+function Tile({value_, mutability}){
   const [value, setValue] = useState(value_);
+  var mutable = mutability;
   
+  // Only changes value if tile is mutable
   function handleClick(){
-    setValue((value+1)%3);
+    if(mutability)
+      setValue((value+1)%3);
   }
 
   function getDisplay(){

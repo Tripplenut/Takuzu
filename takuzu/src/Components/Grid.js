@@ -18,7 +18,8 @@ function Grid({n, puzzle_}) {
     for(var i=0; i<n; i++){
     tiles.push([]);
       for(var j=0; j<n; j++){
-      tiles[i].push(<Tile value_={puzzle_[i][j]}/>);
+        tiles[i].push(<Tile value_={puzzle_[i][j]}
+                            mutability={(puzzle_[i][j] == 2)}/>);
       }
     }
   }

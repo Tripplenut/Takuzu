@@ -22,6 +22,7 @@ function PuzzleSelector({update}){
       <DropdownMenu>
         <Dropdown.Item onClick={() => handleClick(1)}>Puzzle 1</Dropdown.Item>
         <Dropdown.Item onClick={() => handleClick(2)}>Puzzle 2</Dropdown.Item>
+        <Dropdown.Item onClick={() => handleClick(3)}>Puzzle 3</Dropdown.Item>
       </DropdownMenu>
     </Dropdown>
   );
