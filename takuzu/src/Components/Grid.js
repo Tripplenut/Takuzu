@@ -1,4 +1,5 @@
 // React imports
+import { useEffect } from 'react';
 import './Grid.css';
 
 // Component imports
@@ -6,20 +7,22 @@ import Tile from './Tile';
 
 function Grid({n, puzzle_}) {
   var tiles = [];
-
-  function loadPuzzle(puzzle){
+  
+  // Checks if the puzzle passed in from the parent has been altered
+  useEffect(() => {
+    console.log("Puzzle Changed?");
+  });
+  
+  // Loads puzzles
+  function loadPuzzle(){
     for(var i=0; i<n; i++){
     tiles.push([]);
       for(var j=0; j<n; j++){
-        if(puzzle[i][j]==0) {
-          tiles[i].push(<button className="tile" style={{backgroundColor:"#F26430"}} value_={puzzle[i][j]}>{puzzle[i][j]}</button>)}
-        else if(puzzle[i][j]==1) {
-          tiles[i].push(<button className="tile" style={{backgroundColor:"#4D9DE0"}} value_={puzzle[i][j]}>{puzzle[i][j]}</button>)}
-        else {tiles[i].push(<Tile value_={puzzle[i][j]}/>);}
+      tiles[i].push(<Tile value_={puzzle_[i][j]}/>);
       }
     }
   }
-  loadPuzzle(puzzle_); // Loads default puzzle
+  loadPuzzle(); // Loads default puzzle
 
   return(
     <div className="base">{tiles}</div>
