@@ -7,9 +7,9 @@ import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 
 function PuzzleSelector({update}){
 
+  // Changes the puzzle in parent
   function handleClick(n_){
     update(n_);
-    console.log("Button Clicked!");
   }
 
   
