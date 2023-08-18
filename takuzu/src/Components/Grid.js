@@ -1,22 +1,26 @@
 // React imports
-//import { useState } from 'react';
 import './Grid.css';
-import {SBS0P, SBS0S} from './Presets.js';
 
 // Component imports
 import Tile from './Tile';
 
-function Grid({n}) {
-    var tiles = [];
+function Grid({n, puzzle_}) {
+  var tiles = [];
+
+  function loadPuzzle(puzzle){
     for(var i=0; i<n; i++){
-        tiles.push([]);
-        for(var j=0; j<n; j++){
-            tiles[i].push(<Tile value_={SBS0P[i][j]}/>);
-        }
+    tiles.push([]);
+      for(var j=0; j<n; j++){
+      tiles[i].push(<Tile value_={puzzle[i][j]}/>);
+      }
     }
-    return(
-        <div className="base">{tiles}</div>
-    );
+  }
+  loadPuzzle(puzzle_); // Loads default puzzle
+
+  return(
+    <div className="base">{tiles}</div>
+  );
+  
 }
 
-export default Grid
+export default Grid;

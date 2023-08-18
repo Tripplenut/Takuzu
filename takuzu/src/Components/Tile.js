@@ -7,10 +7,7 @@ function Tile({value_}){
   const [value, setValue] = useState(value_);
   
   function handleClick(){
-    if(value === 2)
-      setValue(0);
-    else
-      setValue(value+1);
+    setValue((value+1)%3);
   }
 
   function getDisplay(){
