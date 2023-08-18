@@ -6,15 +6,15 @@
   width: 60px;
   margin: .75%;
   border-radius: 30%;
-  background-color: #4D9DE0;
+  background-color: #D6D6D6;
   border: 0px;
   vertical-align: top;
 }
 
 .tile:hover {
-  background-color: #86BDEA;
+  background-color: #EBEBEB;
 }
       
 .tile:active {
-  background-color: #2278BF;
+  background-color: #B8B8B8;
 }
