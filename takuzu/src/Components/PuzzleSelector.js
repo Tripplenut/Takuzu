@@ -26,7 +26,3 @@ function PuzzleSelector({update}){
 }
 
 export default PuzzleSelector;
-
-/**
-
- */

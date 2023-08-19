@@ -4,7 +4,7 @@ import './Tile.css';
 
 function Tile({value_, mutability}){
   const [value, setValue] = useState(value_);
-  var color;
+  let color;
   
   // Only changes value if tile is mutable
   function handleClick(){

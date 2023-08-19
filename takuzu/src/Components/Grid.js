@@ -6,7 +6,7 @@ import './Grid.css';
 import Tile from './Tile';
 
 function Grid({n, puzzle_}) {
-  var tiles = [];
+  let tiles = [];
   
   // Checks if the puzzle passed in from the parent has been altered
   useEffect(() => {
@@ -15,9 +15,9 @@ function Grid({n, puzzle_}) {
   
   // Loads puzzles
   function loadPuzzle(){
-    for(var i=0; i<n; i++){
+    for(let i=0; i<n; i++){
     tiles.push([]);
-      for(var j=0; j<n; j++){
+      for(let j=0; j<n; j++){
         tiles[i].push(<Tile value_={puzzle_[i][j]}
                             mutability={(puzzle_[i][j] === 2)}/>);
       }

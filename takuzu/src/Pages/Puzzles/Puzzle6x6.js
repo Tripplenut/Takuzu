@@ -26,22 +26,22 @@ function Puzzle6x6(){
   }
 
   return(
-  <Container className='justify-content-md-center'>
-    <Row className='justify-content-md-center'>
-      <h1>
-        6x6 Puzzles
-      </h1>  
-      <Grid n={6} puzzle_={puzzle} ref={gridRef}/>
-    </Row>
-    <Row className='justify-content-md-center'>
-      <h3>Puzzle: {puzzleNum}</h3>
-      <PuzzleSelector update={UpdatePuzzle}/>
-    </Row>
-    <Row>
-      {/*Footer*/}
-      This will be a footer
-    </Row>
-  </Container>
+    <Container>
+      <Row className='justify-content-md-center'>
+        <h1>
+          6x6 Puzzles
+        </h1>  
+        <Grid n={6} puzzle_={puzzle} ref={gridRef}/>
+      </Row>
+      <Row className="justify-content-md-center">
+        <h3>Puzzle: {puzzleNum}</h3>
+        <PuzzleSelector update={UpdatePuzzle}/>
+      </Row>
+      <Row>
+        {/*Footer*/}
+        This will be a footer
+      </Row>
+    </Container>
   );
 }
 
