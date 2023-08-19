@@ -4,7 +4,7 @@ import './Tile.css';
 
 function Tile({value_, mutability}){
   const [value, setValue] = useState(value_);
-  var mutable = mutability;
+  var color;
   
   // Only changes value if tile is mutable
   function handleClick(){
@@ -19,9 +19,20 @@ function Tile({value_, mutability}){
       return null;
   }
 
+  // Changes buttons color
+  function changeColor(){
+    switch(value){
+      case 0: color = 'Zero'; break;
+      case 1: color = 'One'; break;
+      //case 2: color = 'Null'; break;
+      default: color = 'Null'
+    }
+  }
+  changeColor(); // Sets color when component is created
+
   return(
       <button
-        className='tile'
+        className={'tile ' + color}
         onClick={handleClick}>
         {getDisplay()}
       </button>

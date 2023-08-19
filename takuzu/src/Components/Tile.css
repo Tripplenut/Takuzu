@@ -6,16 +6,26 @@
   width: 60px;
   margin: .75%;
   border-radius: 30%;
-  background-color: #D6D6D6;
   border: 0px;
   vertical-align: top;
   font-size: 200%;
 }
 
+.Zero{
+  background-color: #f26430;
+}
+.One{
+  background-color: #4D9DE0;
+}
+
+.tileNull{
+  background-color: #7D7D7D;
+}
+
 .tile:hover {
-  background-color: #EBEBEB;
+  background-color: #86BDEA;
 }
       
 .tile:active {
-  background-color: #B8B8B8;
+  background-color: #2278BF;
 }
