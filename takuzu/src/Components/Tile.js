@@ -1,5 +1,5 @@
 // React imports
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import './Tile.css';
 
 function Tile({value_, mutability}){
@@ -29,6 +29,11 @@ function Tile({value_, mutability}){
     }
   }
   changeColor(); // Sets color when component is created
+
+  useEffect(() => {
+    if(value_)
+      setValue(value_);
+  },[value_]);
 
   return(
       <button
