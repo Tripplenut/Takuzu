@@ -1,6 +1,3 @@
-// React imports
-import { useState } from 'react';
-
 // Bootstrap imports
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';

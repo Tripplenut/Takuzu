@@ -1,5 +1,6 @@
 /* color pallate: https://coolors.co/2ebfa5-bc69aa-4d9de0-f5f5f5-f26430 */
 
+
 .tile{
   color: 'white';
   height: 60px;
@@ -11,21 +12,28 @@
   font-size: 200%;
 }
 
+.tile:active {
+  background-color: #FFFFFF;
+}
+
 .Zero{
   background-color: #f26430;
 }
+.Zero:hover {
+  background-color: #f0ae96;
+}
+
 .One{
   background-color: #4D9DE0;
 }
-
-.tileNull{
-  background-color: #7D7D7D;
-}
-
-.tile:hover {
+.One:hover {
   background-color: #86BDEA;
 }
-      
-.tile:active {
-  background-color: #2278BF;
+
+.Null{
+  background-color: #7D7D7D;
 }
+.Null:hover {
+  background-color: #bbbbbb;
+}
+

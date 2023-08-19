@@ -20,6 +20,7 @@ function Puzzle6x6(){
       case 1: setPuzzle(SBS1P); break;
       case 2: setPuzzle(SBS2P); break;
       case 3: setPuzzle(SBS3P); break;
+      default: setPuzzle(SBS1P);
     }
     setPuzzleNum(n);
   }
