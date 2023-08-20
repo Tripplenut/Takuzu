@@ -16,6 +16,9 @@
   background-color: #FFFFFF;
 }
 
+.ZeroImmutable{
+  background-color: #f24709;
+}
 .Zero{
   background-color: #f26430;
 }
@@ -23,6 +26,9 @@
   background-color: #f0ae96;
 }
 
+.OneImmutable{
+  background-color: #0980e2;
+}
 .One{
   background-color: #4D9DE0;
 }

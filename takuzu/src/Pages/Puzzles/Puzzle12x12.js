@@ -10,7 +10,7 @@ import Grid from '../../Components/Grid';
 import PuzzleSelector from '../../Components/PuzzleSelector';
 import {TWELVE1P, TWELVE2P, TWELVE3P} from '../../Components/Presets';
 
-function Puzzle10x10(){
+function Puzzle12x12(){
   const [puzzle, setPuzzle] = useState(TWELVE1P);
   const [puzzleNum, setPuzzleNum] = useState(1);
   const gridRef = useRef(null);
@@ -45,4 +45,4 @@ function Puzzle10x10(){
   );
 }
 
-export default Puzzle10x10;
+export default Puzzle12x12;

@@ -1,5 +1,5 @@
 // React imports
-import { useState, useRef } from 'react';
+import { useState} from 'react';
 
 // Bootstrap imports
 import Container from 'react-bootstrap/Container';
@@ -13,7 +13,6 @@ import {SIX1P, SIX2P, SIX3P} from '../../Components/Presets';
 function Puzzle6x6(){
   const [puzzle, setPuzzle] = useState(SIX1P);
   const [puzzleNum, setPuzzleNum] = useState(1);
-  const gridRef = useRef(null);
 
   function UpdatePuzzle(n){
     switch(n){
@@ -31,7 +30,7 @@ function Puzzle6x6(){
         <h1>
           6x6 Puzzles
         </h1>  
-        <Grid n={6} puzzle_={puzzle} ref={gridRef}/>
+        <Grid n={6} puzzle_={puzzle}/>
       </Row>
       <Row className="justify-content-md-center">
         <h3>Puzzle: {puzzleNum}</h3>
