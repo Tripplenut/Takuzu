@@ -8,19 +8,19 @@ import Row from 'react-bootstrap/Row';
 // Component imports
 import Grid from '../../Components/Grid';
 import PuzzleSelector from '../../Components/PuzzleSelector';
-import {SBS1P, SBS2P, SBS3P} from '../../Components/Presets';
+import {SIX1P, SIX2P, SIX3P} from '../../Components/Presets';
 
 function Puzzle6x6(){
-  const [puzzle, setPuzzle] = useState(SBS1P);
+  const [puzzle, setPuzzle] = useState(SIX1P);
   const [puzzleNum, setPuzzleNum] = useState(1);
   const gridRef = useRef(null);
 
   function UpdatePuzzle(n){
     switch(n){
-      case 1: setPuzzle(SBS1P); break;
-      case 2: setPuzzle(SBS2P); break;
-      case 3: setPuzzle(SBS3P); break;
-      default: setPuzzle(SBS1P);
+      case 1: setPuzzle(SIX1P); break;
+      case 2: setPuzzle(SIX2P); break;
+      case 3: setPuzzle(SIX3P); break;
+      default: setPuzzle(SIX1P);
     }
     setPuzzleNum(n);
   }

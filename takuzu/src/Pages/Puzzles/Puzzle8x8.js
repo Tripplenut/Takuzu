@@ -8,19 +8,19 @@ import Row from 'react-bootstrap/Row';
 // Component imports
 import Grid from '../../Components/Grid';
 import PuzzleSelector from '../../Components/PuzzleSelector';
-import {EBE1P, EBE2P, EBE3P} from '../../Components/Presets';
+import {EIGHT1P, EIGHT2P, EIGHT3P} from '../../Components/Presets';
 
 function Puzzle8x8(){
-  const [puzzle, setPuzzle] = useState(EBE1P);
+  const [puzzle, setPuzzle] = useState(EIGHT1P);
   const [puzzleNum, setPuzzleNum] = useState(1);
   const gridRef = useRef(null);
 
   function UpdatePuzzle(n){
     switch(n){
-      case 1: setPuzzle(EBE1P); break;
-      case 2: setPuzzle(EBE2P); break;
-      case 3: setPuzzle(EBE3P); break;
-      default: setPuzzle(EBE1P);
+      case 1: setPuzzle(EIGHT1P); break;
+      case 2: setPuzzle(EIGHT2P); break;
+      case 3: setPuzzle(EIGHT3P); break;
+      default: setPuzzle(EIGHT1P);
     }
     setPuzzleNum(n);
   }
