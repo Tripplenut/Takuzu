@@ -29,7 +29,7 @@ function Grid({n, puzzle_}) {
   },[puzzle_]);
 
   return(
-    <div className="base">{tiles}</div>
+    <div className="base" style={{width: n*60+n*10+n*2, height: n*60+n*10+n*2}}>{tiles}</div>
   );
   
 }
