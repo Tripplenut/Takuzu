@@ -2,10 +2,14 @@
 import { useState, useEffect} from 'react';
 import './Tile.css';
 
-function Tile({value_, mutability}){
+function Tile({value_, mutability, n}){
   const [value, setValue] = useState(value_);
   let color;
-  
+  let style;
+  if(n===6) style = {height: "75px", width: "75px", margin: "2px", fontSize: "40px"};
+  else if(n===8) style = {height: "55px", width: "55px", margin: "2px", fontSize: "30px"};
+  else if(n===10) style = {height: "45px", width: "45px", margin: "1px", fontSize: "25px"};
+  else if(n===12) style = {height: "37px", width: "37px", margin: "1px", fontSize: "23px"};
   // Only changes value if tile is mutable
   function handleClick(){
     if(mutability)
@@ -36,7 +40,8 @@ function Tile({value_, mutability}){
   return(
       <button
         className={`tile ${color}`}
-        onClick={handleClick}>
+        onClick={handleClick}
+        style={style}>
         {getDisplay()}
       </button>
   );

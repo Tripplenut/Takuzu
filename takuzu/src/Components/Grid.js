@@ -18,6 +18,7 @@ function Grid({n, puzzle_}) {
           <Tile
             value_={puzzle_[i][j]}
             mutability={(puzzle_[i][j] === 2)}
+            n={n}
           />);
       }
     }
@@ -31,7 +32,7 @@ function Grid({n, puzzle_}) {
   });
 
   return(
-    <div className="base" style={{width: n*60+n*10+n*2, height: n*60+n*10+n*2}}>{tiles}</div>
+    <div className="base">{tiles}</div>
   );
   
 }
