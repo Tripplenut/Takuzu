@@ -7,16 +7,21 @@ import Tile from './Tile';
 
 let id = 0; // Unique id so every tile rerenders
 
+/**
+ * Grid Object
+ * @param {*} n The size of the puzzle
+ * @param {*} puzzle_ The initial board
+ * @returns All the tiles and game functionality
+ */
 function Grid({n, puzzle_}) {
   const[tiles, setTiles] = useState([]);
-  const[tilesVal, setTilesVal] = useState([]);
+  const[tilesVal, setTilesVal] = useState(puzzle_);
 
   function onTileClick(val, row, col){
-    const temp = tilesVal.map((rowArr, i) =>
-      i === row ? rowArr.map((cell, j) =>
-      (j === col ? val : cell)) : rowArr
-    );
+    let temp = tilesVal;
+    temp[row][col] = val;
     setTilesVal(temp);
+    console.log(tilesVal);
   }
   
   // Loads puzzles
@@ -30,11 +35,11 @@ function Grid({n, puzzle_}) {
         newTilesVal[i].push(puzzle_[i][j]);
         newTiles[i].push(
           <Tile
-            key = {`${i}-${j}-${id}`}
+            key = {`${i},${j},${id}`}
             value_= {puzzle_[i][j]}
             mutability = {(puzzle_[i][j] === 2)}
             n = {n}
-            setVal = {onTileClick}
+            gridClick = {onTileClick}
             pos = {i*n+j}
           />);
         id+=1;
@@ -47,7 +52,6 @@ function Grid({n, puzzle_}) {
   // Reloads board whenever puzzle_ is altered
   useEffect(() => {
     loadPuzzle();
-    console.log(tilesVal);
   },[puzzle_]);
 
   return(

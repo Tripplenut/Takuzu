@@ -2,24 +2,36 @@
 import { useState, useEffect } from 'react';
 import './Tile.css';
 
-function Tile({value_, mutability, n, setVal, pos}){
+/**
+ * Tile Object
+ * @param {int} value_ The value of the given tile
+ * @param {boolean} mutability 
+ * @param {int} n The size of the board
+ * @param {int} pos The position of the tile on the board
+ * @param {Function} gridClick Grid Function that handles tile clicks
+ * @returns Visual of tile
+ */
+function Tile({value_, mutability, n, pos, gridClick}){
   const [value, setValue] = useState(value_);
   let color;
   let style;
 
   // Determines Tile Size
-  if(n===6) style = {height: "75px", width: "75px", margin: "2px", fontSize: "40px"};
-  else if(n===8) style = {height: "55px", width: "55px", margin: "2px", fontSize: "30px"};
-  else if(n===10) style = {height: "45px", width: "45px", margin: "1px", fontSize: "25px"};
-  else if(n===12) style = {height: "37px", width: "37px", margin: "1px", fontSize: "23px"};
+  if(n === 6) style = {height: "75px", width: "75px", margin: "2px", fontSize: "40px"};
+  else if(n === 8) style = {height: "55px", width: "55px", margin: "2px", fontSize: "30px"};
+  else if(n === 10) style = {height: "45px", width: "45px", margin: "1px", fontSize: "25px"};
+  else if(n === 12) style = {height: "37px", width: "37px", margin: "1px", fontSize: "23px"};
 
   // Only changes value if tile is mutable
   function handleClick(){
     if(mutability){
-      setValue((value+1)%3);
-      let row = pos/n;
+      let temp = value;
+      setValue((temp+1)%3);
+      let row = parseInt(pos/n);
       let col = pos%n;
-      setVal(value, row, col);
+      console.log("Tile at row:",row," col: ",col," has been changed to ",value);
+      gridClick((temp+1)%3, row, col);
+      // We do (temp+1)%3 instead of value because of async time for value
     }
   }
 
@@ -39,10 +51,6 @@ function Tile({value_, mutability, n, setVal, pos}){
     }
   }
   changeColor(); // Sets color when component is created
-
-  useEffect(() => {
-    setValue(value_);
-  },[value_]);
 
   return(
       <button
