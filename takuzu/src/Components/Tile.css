@@ -20,6 +20,10 @@ https://coolors.co/8693ab-bdd4e7-212227-637074-ed1c24
   background-color: #FFFFFF;
 }
 
+.color-transition {
+  transition: background-color .3s ease;
+}
+
 .ZeroImmutable{
   background-color: #f24709;
   border-style: solid;

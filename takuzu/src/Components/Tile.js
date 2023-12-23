@@ -1,5 +1,5 @@
 // React imports
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Tile.css';
 
 /**
@@ -29,7 +29,6 @@ function Tile({value_, mutability, n, pos, gridClick}){
       setValue((temp+1)%3);
       let row = parseInt(pos/n);
       let col = pos%n;
-      console.log("Tile at row:",row," col: ",col," has been changed to ",value);
       gridClick((temp+1)%3, row, col);
       // We do (temp+1)%3 instead of value because of async time for value
     }
@@ -54,7 +53,7 @@ function Tile({value_, mutability, n, pos, gridClick}){
 
   return(
       <button
-        className={`tile ${color}`}
+        className={`tile ${color} color-transition`}
         onClick={handleClick}
         style={style}>
         {getDisplay()}
