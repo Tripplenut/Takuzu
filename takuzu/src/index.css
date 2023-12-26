@@ -48,11 +48,21 @@ code {
 #rules {
   padding-top: 15px;
   border-color: white;
-  border-width: 2px;
-  border-style:dashed ;
   width: 750px;
   font-family: "Mario";
   margin: 0 auto;
+  background: 
+    linear-gradient(90deg, #ffffff 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, #ffffff 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, #ffffff 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, #ffffff 50%, transparent 0) repeat-y;
+  background-size: 25px 5px, 25px 5px, 5px 25px, 5px 25px;
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  animation: linearGradientMove .3s infinite linear;
+}
+
+@keyframes linearGradientMove {
+  100% {background-position: 25px 0, -25px 100%, 0 -25px, 100% 25px;}
 }
 
 ul {
@@ -67,3 +77,19 @@ ul li:before
   margin: 0 1em;    /* any design */
   color: yellow;
 }
+
+#line {
+  margin-top: 10px;
+  width: 5px;
+  height: 600px;
+  background: linear-gradient(0deg, white 50%, transparent 0) repeat-y;
+  background-size: 5px 25px;
+  background-position: 100% 0;
+  animation: linearLineMove .3s infinite linear;
+}
+
+@keyframes linearLineMove {
+  100% {background-position: 100% 25px;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700');

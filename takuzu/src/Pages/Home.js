@@ -25,7 +25,7 @@ function Home(){
         </div>
       </Row>
       <Row>
-        <a style={{margin: '20px', textAlign: 'center'}} href="https://www.textstudio.com/" target="_blank">Logo Credit</a>
+        <a style={{margin: '20px', textAlign: 'center', width: '110px'}} href="https://www.textstudio.com/" target="_blank">Logo Credit</a>
       </Row>
     </Container>
   );

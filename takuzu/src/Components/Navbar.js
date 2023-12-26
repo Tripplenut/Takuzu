@@ -24,8 +24,8 @@ function NavigationBar(){
           <NavLink to='/12x12puzzle' className='dropdown-item'>12x12 Puzzles</NavLink>
         </NavDropdown>
         <NavLink to='/tutorial' className='nav-link' style={{color: 'black'}}> Tutorial </NavLink>
-        <NavLink to='/about' className='nav-link' style={{color: 'black'}}> About </NavLink>
         <NavLink to='/settings' className='nav-link' style={{color: 'black'}}> Settings </NavLink>
+        <NavLink to='/about' className='nav-link' style={{color: 'black'}}> About </NavLink>
       </Nav>
     </NavBar>
   );
