@@ -7,8 +7,7 @@ function Home(){
     <Container className='justify-content-md-center'>
       <Row>
         <h1 className="heading1">
-          <br></br>
-          WELCOME TO<br></br>
+          <br></br>WELCOME TO<br></br>
           <img src={process.env.PUBLIC_URL + '/namelogo.png'} width="500" height="150" alt="Logo"></img>
         </h1>
         <p id="p1">Choose a puzzle from the bar on top!</p>
@@ -25,7 +24,7 @@ function Home(){
         </div>
       </Row>
       <Row>
-        <a style={{margin: '20px', textAlign: 'center', width: '110px'}} href="https://www.textstudio.com/" target="_blank">Logo Credit</a>
+        <a style={{margin: '20px', textAlign: 'center', width: '110px'}} rel="noreferrer" href="https://www.textstudio.com/" target="_blank">Logo Credit</a>
       </Row>
     </Container>
   );

@@ -7,9 +7,7 @@ function Settings(){
     <Container className='justify-content-md-center'>
       <Row>
         {/*Main Content*/}
-        <h1>
-          Le Settings page
-        </h1>
+        <h1 className='heading1'>Settings</h1>
       </Row>
       <Row>
         {/*Footer*/}

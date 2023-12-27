@@ -1,6 +1,6 @@
 // React imports
 import {NavLink} from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import music from '../music.wav'
 
 // Bootstrap imports
@@ -10,7 +10,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import Toggle from './Toggle'
 
 function NavigationBar(){
-  const audio = new Audio(music);
+  const [audio, setAudio] = useState(new Audio(music));
   const [playing, setPlaying] = useState(false);
 
   function playPause() {
@@ -43,7 +43,7 @@ function NavigationBar(){
         <NavLink to='/settings' className='nav-link' style={{color: 'black'}}> Settings </NavLink>
         <NavLink to='/about' className='nav-link' style={{color: 'black'}}> About </NavLink>
         <Toggle label=" "/>
-        <button id='sound' onClick={playPause}>{playing ? '\u2613' : '\u266B'}</button>
+        <button id='sound' onClick={playPause}>{playing ? '\u23f8' : '\u266B'}</button>
       </Nav>
     </NavBar>
   );
