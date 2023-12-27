@@ -14,12 +14,13 @@
 
 #t_base1{
   height: 250px;
-  width: 250px;
+  width: 270px;
   background-color: rgba(245, 245, 245);
   border-radius: 5%;
-  padding-top: 15px;
   text-align: center;
   border-style: solid;
   border-width: 3px;
   border-color: #7D7D7D;
+  padding-top: 5px;
+  margin: 10px;
 }

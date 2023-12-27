@@ -12,7 +12,7 @@ import Toggle from './Toggle'
 function NavigationBar(){
   const [audio, setAudio] = useState(new Audio(music));
   const [playing, setPlaying] = useState(false);
-
+  audio.loop = true;
   function playPause() {
     if(playing) {
       audio.pause();

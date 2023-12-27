@@ -49,6 +49,7 @@ code {
 
 .navbar {
   background-color: #ffe45c;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -120,7 +121,7 @@ ul li:before
 
 #sound {
   border-radius: 75px;
-  height: 25px;
+  height: 30px;
   text-align: center;
   margin-top: 10px;
   border: 0;

@@ -9,10 +9,6 @@ function Settings(){
         {/*Main Content*/}
         <h1 className='heading1'>Settings</h1>
       </Row>
-      <Row>
-        {/*Footer*/}
-        This will be a footer (eventually)
-      </Row>
     </Container>
   );
 }
