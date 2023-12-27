@@ -1,14 +1,30 @@
 // React imports
 import {NavLink} from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import music from '../music.wav'
 
 // Bootstrap imports
 import Nav from 'react-bootstrap/Nav'
 import NavBar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import Toggle from './Toggle'
 
 function NavigationBar(){
+  const audio = new Audio(music);
+  const [playing, setPlaying] = useState(false);
+
+  function playPause() {
+    if(playing) {
+      audio.pause();
+      setPlaying(false);
+    } else {
+      audio.play();
+      setPlaying(true);
+    }
+  }
+
   return(
-    <NavBar className='navbar'>
+    <NavBar>
       <div className='ms-4'>
       <NavLink to='/' className='nav-link'>
         <NavBar.Brand>
@@ -16,7 +32,7 @@ function NavigationBar(){
         </NavBar.Brand>
       </NavLink>
       </div>
-      <Nav className='navbar navbar-expand-1g navbar-dark bg-transparent'>
+      <Nav>
         <NavDropdown title='Puzzles' style={{color: 'black'}}>
           <NavLink to='/6x6puzzle' className='dropdown-item'>6x6 Puzzles</NavLink>
           <NavLink to='/8x8puzzle' className='dropdown-item'>8x8 Puzzles</NavLink>
@@ -26,9 +42,11 @@ function NavigationBar(){
         <NavLink to='/tutorial' className='nav-link' style={{color: 'black'}}> Tutorial </NavLink>
         <NavLink to='/settings' className='nav-link' style={{color: 'black'}}> Settings </NavLink>
         <NavLink to='/about' className='nav-link' style={{color: 'black'}}> About </NavLink>
+        <Toggle label=" "/>
+        <button id='sound' onClick={playPause}>{playing ? '\u2613' : '\u266B'}</button>
       </Nav>
     </NavBar>
   );
 }
-
+//263C for sun, 263D for moon, 2699 for gear
 export default NavigationBar; 

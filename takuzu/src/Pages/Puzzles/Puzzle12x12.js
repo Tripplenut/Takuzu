@@ -28,13 +28,13 @@ function Puzzle12x12(){
   return(
     <Container>
       <Row className='justify-content-md-center'>
-        <h1>
+        <h1 className="heading1">
           12x12 Puzzles
         </h1>  
         <Grid n={12} puzzle_={puzzle} ref={gridRef}/>
       </Row>
       <Row className="justify-content-md-center">
-        <h3>Puzzle: {puzzleNum}</h3>
+        <h3 className="heading3">Puzzle: {puzzleNum}</h3>
         <PuzzleSelector update={UpdatePuzzle}/>
       </Row>
       <Row>

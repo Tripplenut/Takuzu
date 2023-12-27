@@ -6,6 +6,7 @@ body {
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffe45c !important;
 }
 
 code {
@@ -28,6 +29,15 @@ code {
   -webkit-text-stroke-color: white;
 }
 
+.heading3 {
+  text-align: center;
+  font-family: "Mario";
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
 #p1 {
   text-align: center;
   font-family: "Mario";
@@ -47,18 +57,24 @@ code {
 
 #rules {
   padding-top: 15px;
+  padding-left: 35px;
+  font-size: 25px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   border-color: white;
   width: 750px;
   font-family: "Mario";
   margin: 0 auto;
   background: 
-    linear-gradient(90deg, #ffffff 50%, transparent 0) repeat-x,
-    linear-gradient(90deg, #ffffff 50%, transparent 0) repeat-x,
-    linear-gradient(0deg, #ffffff 50%, transparent 0) repeat-y,
-    linear-gradient(0deg, #ffffff 50%, transparent 0) repeat-y;
+    linear-gradient(90deg, #0980e2 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, #0980e2 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y;
   background-size: 25px 5px, 25px 5px, 5px 25px, 5px 25px;
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   animation: linearGradientMove .3s infinite linear;
+  text-align: left;
 }
 
 @keyframes linearGradientMove {
@@ -75,14 +91,14 @@ ul li:before
 {
   content: '\2605';
   margin: 0 1em;    /* any design */
-  color: yellow;
+  color: #0980e2;
 }
 
 #line {
   margin-top: 10px;
   width: 5px;
   height: 600px;
-  background: linear-gradient(0deg, white 50%, transparent 0) repeat-y;
+  background: linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y;
   background-size: 5px 25px;
   background-position: 100% 0;
   animation: linearLineMove .3s infinite linear;
@@ -93,3 +109,28 @@ ul li:before
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700');
+
+.light {
+  background-color: #ffe45c;
+}
+
+.dark {
+  background-color: #28242c;
+}
+
+#sound {
+  border-radius: 75px;
+  height: 25px;
+  text-align: center;
+  margin-top: 10px;
+  border: 0;
+  background-color: #0980e2;
+}
+
+.numChar {
+  -webkit-text-stroke-width: .5px;
+}
+
+#about-text {
+  color: #0980e2;
+}

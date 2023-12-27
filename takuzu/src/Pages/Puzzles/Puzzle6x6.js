@@ -26,19 +26,16 @@ function Puzzle6x6(){
 
   return(
     <Container className = "text-center">
-      <br></br>
       <Row>
         <h1 className="heading1">
           6x6 Puzzles
         </h1>
         <Grid n={6} puzzle={puzzle} puzzleSol={puzzleSol}/>
       </Row>
-
       <Row>
-        <h3>Puzzle: {puzzleNum}</h3>
+        <h3 className="heading3">Puzzle: {puzzleNum}</h3>
         <PuzzleSelector update={UpdatePuzzle}/>
       </Row>
-
       <Row>
         {/*Footer*/}
         This will be a footer

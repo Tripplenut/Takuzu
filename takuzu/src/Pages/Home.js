@@ -14,13 +14,13 @@ function Home(){
         <p id="p1">Choose a puzzle from the bar on top!</p>
       </Row>
       <Row id="rules">
-        <div style={{fontSize: "25px", color: "white"}}>
+        <div>
           Rules:
           <ul>
             <li>Fill the grid with 1's and 0's</li>
-            <li>Max 2 of same # can be adjacent in row/col</li>
+            <li>Max 2 of same <span className='numChar'>#</span> can be adjacent in row/col</li>
             <li>No identical rows or columns.</li>
-            <li>Same # of 0s and 1s in each row/column</li>
+            <li>Same <span className='numChar'>#</span> of 0's and 1's in each row/column</li>
           </ul>
         </div>
       </Row>
