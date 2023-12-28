@@ -52,8 +52,12 @@ code {
   font-size: 20px;
 }
 
-.nav-link {
-  color: black !important ; 
+#light .nav-link {
+  color: black !important ;
+}
+
+#dark .nav-link {
+  color: #ffe45c !important;
 }
 
 #rules {
@@ -111,11 +115,11 @@ ul li:before
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700');
 
-.light {
+#light {
   background-color: #ffe45c;
 }
 
-.dark {
+#dark {
   background-color: #28242c;
 }
 

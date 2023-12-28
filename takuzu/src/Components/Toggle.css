@@ -38,7 +38,7 @@
 .inner:before {
     content: "🌙";
     padding-left: 10px;
-    background-color: #3409a0af;
+    background-color: #6137cc;
     color: #fff;
 }
 .inner:after {
