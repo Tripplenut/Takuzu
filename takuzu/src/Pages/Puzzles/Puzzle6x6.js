@@ -1,8 +1,8 @@
 // React imports
-import { useState} from 'react';
+import { useState } from 'react';
 
 // Bootstrap imports
-import {Container, Row, Col} from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 // Component imports
 import Grid from '../../Components/Grid';

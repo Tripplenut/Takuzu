@@ -1,45 +1,38 @@
 // React imports
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 // Bootstrap imports
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Container, Row } from 'react-bootstrap';
 
 // Component imports
 import Grid from '../../Components/Grid';
 import PuzzleSelector from '../../Components/PuzzleSelector';
-import {TEN1P, TEN2P, TEN3P} from '../../Components/Presets';
+import {TEN1P, TEN1S, TEN2P, TEN2S, TEN3P, TEN3S} from '../../Components/Presets';
 
 function Puzzle10x10(){
   const [puzzle, setPuzzle] = useState(TEN1P);
+  const [puzzleSol, setPuzzleSol] = useState(TEN1S);
   const [puzzleNum, setPuzzleNum] = useState(1);
-  const gridRef = useRef(null);
 
   function UpdatePuzzle(n){
     switch(n){
-      case 1: setPuzzle(TEN1P); break;
-      case 2: setPuzzle(TEN2P); break;
-      case 3: setPuzzle(TEN3P); break;
-      default: setPuzzle(TEN1P);
+      case 1: setPuzzle(TEN1P); setPuzzleSol(TEN1S); break;
+      case 2: setPuzzle(TEN2P); setPuzzleSol(TEN2S); break;
+      case 3: setPuzzle(TEN3P); setPuzzleSol(TEN3S); break;
+      default: setPuzzle(TEN1P); setPuzzleSol(TEN1S);
     }
     setPuzzleNum(n);
   }
 
   return(
-    <Container>
-      <Row className='justify-content-md-center'>
-        <h1 className="heading1">
-          10x10 Puzzles
-        </h1>  
-        <Grid n={10} puzzle_={puzzle} ref={gridRef}/>
-      </Row>
-      <Row className="justify-content-md-center">
-        <h3 className="heading3">Puzzle: {puzzleNum}</h3>
-        <PuzzleSelector update={UpdatePuzzle}/>
+    <Container className = "text-center">
+      <Row>
+        <h1 className="heading1">10x10 Puzzles</h1>
+        <Grid n={10} puzzle={puzzle} puzzleSol={puzzleSol}/>
       </Row>
       <Row>
-        {/*Footer*/}
-        This will be a footer
+        <h3 className="heading3">Puzzle: {puzzleNum}</h3>
+        <PuzzleSelector update={UpdatePuzzle}/>
       </Row>
     </Container>
   );
