@@ -24,7 +24,7 @@ function Grid({n, puzzle, puzzleSol}) {
     let temp = tilesVal;
     temp[row][col] = val;
     setTilesVal(temp);
-    //console.log(tilesVal);
+    console.log(tilesVal);
     if(checkSolved()){
       console.log("Board has been solved");
     }
@@ -33,12 +33,11 @@ function Grid({n, puzzle, puzzleSol}) {
   // Loads puzzles
   function loadPuzzle(){
     let newTiles = [];
-    let newTilesVal = [];
+    let newTilesVal = tilesVal;
     for(let i=0; i<n; i++){
       newTiles.push([]);
-      newTilesVal.push([]);
       for(let j=0; j<n; j++){
-        newTilesVal[i].push(puzzle[i][j]);
+        newTilesVal[i][j] = puzzle[i][j];
         newTiles[i].push(
           <Tile
             key = {`${i},${j},${id}`}
@@ -53,6 +52,7 @@ function Grid({n, puzzle, puzzleSol}) {
     }
     setTiles(newTiles);
     setTilesVal(newTilesVal);
+    setSolved(false);
   }
 
   function checkSolved(){

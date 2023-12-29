@@ -15,6 +15,8 @@ function Puzzle6x6(){
   const [puzzleNum, setPuzzleNum] = useState(1);
 
   function UpdatePuzzle(n){
+    if(n === puzzleNum)
+      return;
     switch(n){
       case 1: setPuzzle(SIX1P); setPuzzleSol(SIX1S); break;
       case 2: setPuzzle(SIX2P); setPuzzleSol(SIX2S); break;

@@ -27,8 +27,11 @@ function About(){
         <div id='line'/>
         <div style={{width: '427.4px', margin: '0 auto', marginTop: '10px', textAlign: 'center'}}>
           <img src={process.env.PUBLIC_URL + '/fabius.jpeg'} width='427.5px' height='427.5px' alt="fabius"></img>
-          <p style={{fontFamily: 'Nunito', marginTop: '10px'}}></p>
-          <a href="https://github.com/Tripplenut" target="_blank" rel="noreferrer">
+            <p style={{fontFamily: 'Nunito', marginTop: '10px'}}>Hi, I'm Anthony! I'm a sophomore at
+            <i> Rensselaer Polytechnic Institute</i>. I major in <i>Computer Science</i> and
+            I am a coordinator for <a href="https://new.rcos.io/">Rensselaer Center for Open Source</a>.
+            I plan to work as a software engineer specializing in systems, backend, and devops!</p>
+            <a href="https://github.com/Tripplenut" target="_blank" rel="noreferrer">
             <img style={{marginRight: '20px'}} src={process.env.PUBLIC_URL + '/github.png'} width='50px' height='50px' alt="github"></img>
           </a>
           <a href="https://www.linkedin.com/in/anthony-fabius/" target="_blank" rel="noreferrer">
