@@ -24,3 +24,12 @@
   padding-top: 5px;
   margin: 10px;
 }
+
+.solvedText {
+  text-align: center;
+  font-family: "Mario";
+  font-size: 40px;
+  color: green;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}

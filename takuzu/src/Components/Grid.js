@@ -18,6 +18,7 @@ function Grid({n, puzzle, puzzleSol, puzzleNum}) {
   const[tiles, setTiles] = useState([]); // Matrix of Tile objects
   const[tilesVal, setTilesVal] = useState(Array.from(puzzle, rows => Array.from(rows))); // Value of tile objects
   const[solved, setSolved] = useState(false); // Toggle for solved popup
+  const[timer, setTimer] = useState(0); // Game timer
 
   function onTileClick(val, row, col){
     let temp = tilesVal;
@@ -69,8 +70,30 @@ function Grid({n, puzzle, puzzleSol, puzzleNum}) {
     loadPuzzle();
   },[puzzle]);
 
+  // Incrementing the Timer
+  useEffect(() => {
+    let time;
+    if (!solved){
+      time = setInterval(() => {
+        setTimer(prevTime => prevTime + 1)
+      }, 1000);
+    }
+    return () => clearInterval(time)
+  })
+
+  const formatTime = (time) => {
+    const minutes = Math.floor(time/60);
+    const seconds = time % 60;
+    return `${minutes.toString().padStart(1,'0')}:${seconds.toString().padStart(2,'0')}`
+  } 
+
   return(
     <Container className="text-center">
+      <Row>
+        <Col>
+        <h2 className="heading3"> Timer: {formatTime(timer)}</h2>
+        </Col>
+      </Row>
       <Row>
         <Col className="d-flex justify-content-center">
           <div className="base">
@@ -81,7 +104,7 @@ function Grid({n, puzzle, puzzleSol, puzzleNum}) {
       <Row>
         <Col>
           <Fade in={solved}>
-            <h1 className="text-success">Congrats you solved the puzzle!</h1>
+            <h1 className="solvedText">Congrats you solved the puzzle!</h1>
           </Fade>
         </Col>
       </Row>
