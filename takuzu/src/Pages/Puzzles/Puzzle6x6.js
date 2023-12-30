@@ -15,7 +15,7 @@ function Puzzle6x6(){
   const [puzzleNum, setPuzzleNum] = useState(1);
 
   function UpdatePuzzle(n){
-    if(n === puzzleNum)
+    if(n === puzzleNum) // Stops switching to same puzzle
       return;
     switch(n){
       case 1: setPuzzle(SIX1P); setPuzzleSol(SIX1S); break;
@@ -32,7 +32,7 @@ function Puzzle6x6(){
         <h1 className="heading1">
           6x6 Puzzles
         </h1>
-        <Grid n={6} puzzle={puzzle} puzzleSol={puzzleSol}/>
+        <Grid n={6} puzzle={puzzle} puzzleSol={puzzleSol} puzzleNum={puzzleNum}/>
       </Row>
       <Row>
         <h3 className="heading3">Puzzle: {puzzleNum}</h3>

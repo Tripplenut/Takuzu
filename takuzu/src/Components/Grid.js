@@ -6,18 +6,17 @@ import './Grid.css';
 // Component imports
 import Tile from './Tile';
 
-let id = 0; // Unique id so every tile rerenders
-
 /**
  * Grid Object
- * @param {*} n The size of the puzzle
- * @param {*} puzzle The initial board
- * @param {*} puzzleSol The solution to the puzzle
+ * @param {int} n The size of the puzzle
+ * @param {int[][]} puzzle The initial board
+ * @param {int[][]} puzzleSol The solution to the puzzle
+ * @param {int} puzzleNum The puzzle number (used for tile id)
  * @returns All the tiles and game functionality
  */
-function Grid({n, puzzle, puzzleSol}) {
+function Grid({n, puzzle, puzzleSol, puzzleNum}) {
   const[tiles, setTiles] = useState([]); // Matrix of Tile objects
-  const[tilesVal, setTilesVal] = useState(puzzle); // Value of tile objects
+  const[tilesVal, setTilesVal] = useState(Array.from(puzzle, rows => Array.from(rows))); // Value of tile objects
   const[solved, setSolved] = useState(false); // Toggle for solved popup
 
   function onTileClick(val, row, col){
@@ -40,14 +39,13 @@ function Grid({n, puzzle, puzzleSol}) {
         newTilesVal[i][j] = puzzle[i][j];
         newTiles[i].push(
           <Tile
-            key = {`${i},${j},${id}`}
+            key = {`${i},${j},${puzzleNum}`}
             value_= {puzzle[i][j]}
             mutability = {(puzzle[i][j] === 2)}
             n = {n}
             gridClick = {onTileClick}
             pos = {i*n+j}
           />);
-        id+=1;
       }
     }
     setTiles(newTiles);
