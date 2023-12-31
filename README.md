@@ -37,6 +37,6 @@ Created by Anthony Fabius and Srivaths Ravva. (Contribute some code and your nam
 
 ## Contact
 
-If you have any questions, suggestions, or just want to chat about Takuzu or anything else, feel free to reach out to us at afabius05@gmail.com.
+If you have any questions, suggestions, or just want to chat about Takuzu or anything else, feel free to reach out to us at afabius05@gmail.com or srivaths.ravva@gmail.com.
 
 Happy puzzling! 🧩🎮
