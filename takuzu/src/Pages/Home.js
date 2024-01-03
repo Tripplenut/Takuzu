@@ -1,6 +1,5 @@
-// Bootstrap imports
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Container, Row } from 'react-bootstrap';
+import './Pages.css';
 
 function Home(){
   return(

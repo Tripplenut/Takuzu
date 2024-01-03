@@ -1,8 +1,7 @@
-// Bootstrap imports
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Container, Row } from 'react-bootstrap';
 import TutorialGrid from '../Components/TutorialGrid';
 import {EXP1, EXP2} from '../Components/Presets';
+import './Pages.css';
 
 
 function Tutorial(){

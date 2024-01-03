@@ -44,7 +44,7 @@
 .inner:after {
     content: "🔆";
     padding-right: 10px;
-    background-color: rgba(0, 106, 152, 0.856);
+    background-color: #0980e2;
     color: #fff;
     text-align: right;
 }

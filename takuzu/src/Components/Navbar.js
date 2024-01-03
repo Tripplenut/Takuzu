@@ -48,7 +48,7 @@ function NavigationBar(){
             <NavLink to='/12x12puzzle' className='dropdown-item'>12x12 Puzzles</NavLink>
           </NavDropdown>
           <NavLink to='/tutorial' className='nav-link'> Tutorial </NavLink>
-          <NavLink to='/settings' className='nav-link'> Settings </NavLink>
+          <NavLink to='/account' className='nav-link'> Account </NavLink>
           <NavLink to='/about' className='nav-link'> About </NavLink>
           <Toggle label=" " onToggle={toggleTheme}/>
           <button id='sound' onClick={playPause}>{playing ? '\u23f8' : '\u266B'}</button>

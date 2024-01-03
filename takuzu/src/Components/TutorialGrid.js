@@ -9,7 +9,7 @@ function TutorialGrid({rows, cols, puzzle}) {
         let val = puzzle[i][j];
         if(val===2){val=null;}
         tiles[i].push(
-          <div className="t_tile" id={"n"+puzzle[i][j]}>
+          <div className="t_tile" id={"n"+puzzle[i][j]} key = {`${i},${j}`}>
             {val}
           </div>);
       }

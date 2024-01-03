@@ -60,28 +60,6 @@ code {
   color: #ffe45c !important;
 }
 
-#rules {
-  padding-top: 15px;
-  padding-left: 35px;
-  font-size: 25px;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  border-color: white;
-  width: 750px;
-  font-family: "Mario";
-  margin: 0 auto;
-  background: 
-    linear-gradient(90deg, #0980e2 50%, transparent 0) repeat-x,
-    linear-gradient(90deg, #0980e2 50%, transparent 0) repeat-x,
-    linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y,
-    linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y;
-  background-size: 25px 5px, 25px 5px, 5px 25px, 5px 25px;
-  background-position: 0 0, 0 100%, 0 0, 100% 0;
-  animation: linearGradientMove .3s infinite linear;
-  text-align: left;
-}
-
 @keyframes linearGradientMove {
   100% {background-position: 25px 0, -25px 100%, 0 -25px, 100% 25px;}
 }
@@ -99,16 +77,6 @@ ul li:before
   color: #0980e2;
 }
 
-#line {
-  margin-top: 10px;
-  width: 5px;
-  height: 600px;
-  background: linear-gradient(0deg, #0980e2 50%, transparent 0) repeat-y;
-  background-size: 5px 25px;
-  background-position: 100% 0;
-  animation: linearLineMove .3s infinite linear;
-}
-
 @keyframes linearLineMove {
   100% {background-position: 100% 25px;}
 }
@@ -121,21 +89,4 @@ ul li:before
 
 #dark {
   background-color: #28242c;
-}
-
-#sound {
-  border-radius: 75px;
-  height: 30px;
-  text-align: center;
-  margin-top: 10px;
-  border: 0;
-  background-color: #0980e2;
-}
-
-.numChar {
-  -webkit-text-stroke-width: .5px;
-}
-
-#about-text {
-  color: #0980e2;
 }
